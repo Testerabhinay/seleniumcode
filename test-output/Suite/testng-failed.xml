@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <parameter name="browser" value="Firefox"/>
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="FirefoxTest(failed)">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="testscripts.Book_search">
+        <methods>
+          <include name="setreport"/>
+          <include name="stopvideo"/>
+          <include name="endreport"/>
+          <include name="launchApp"/>
+          <include name="CaptureScreenshot"/>
+          <include name="valid" invocation-numbers="0 1 2 3 4 5"/>
+        </methods>
+      </class> <!-- testscripts.Book_search -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
